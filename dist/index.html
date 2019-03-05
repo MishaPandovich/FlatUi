@@ -6,7 +6,7 @@
   <link href="app.css" rel="stylesheet"></head>
   <body>
     <div id="fullpage">
-      <div class="section section--one active">
+      <div class="section active">
         <section class="standart-buttons">
           <h1 class="standart-buttons__title">Standard buttons</h1>
           <div class="standart-buttons__inner">
@@ -24,6 +24,107 @@
           </div>
         </section>
       </div>
+      <div class="section section--two">
+        <h1 class="pie-wrapper__title">percentages/pie chart</h1>
+        <section class="pie-wrapper">
+          <div class="pie"><span class="pievalue">0</span>
+            <div class="pieone">
+              <div></div>
+            </div>
+            <div class="pietwo">
+              <div></div>
+            </div>
+          </div>
+          <div class="pie"><span class="pievalue">0</span>
+            <div class="pieone">
+              <div></div>
+            </div>
+            <div class="pietwo">
+              <div></div>
+            </div>
+          </div>
+          <div class="pie"><span class="pievalue">0</span>
+            <div class="pieone">
+              <div></div>
+            </div>
+            <div class="pietwo">
+              <div></div>
+            </div>
+          </div>
+          <div class="pie"><span class="pievalue">0</span>
+            <div class="pieone">
+              <div></div>
+            </div>
+            <div class="pietwo">
+              <div></div>
+            </div>
+          </div>
+          <section>
+            <div class="pieID pie-chart"></div>
+            <ul class="pieID legend">
+              <li><em>Html</em><span>70 </span></li>
+              <li><em>Css</em><span>65</span></li>
+              <li><em>Js</em><span>45</span></li>
+              <li><em>Jquery</em><span>40</span></li>
+            </ul>
+          </section>
+        </section>
+      </div>
+      <div class="section">
+        <section class="sliders">
+          <h2 class="title sliders__title">Sliders</h2>
+          <div class="slider__inner">
+            <div class="slider">
+              <div class="slider__wrapper" style="left: 10px;">
+                <input class="slider__value" type="text" name="value-slider" value="0">
+              </div>
+            </div>
+            <div class="slider-two" id="slider">
+              <div class="thumb"></div>
+              <div class="range-line"></div>
+              <div class="slider-values"><span>0</span><span>25</span><span>50 </span><span>75</span><span>100</span></div>
+            </div>
+          </div>
+        </section>
+        <section class="stages">
+          <h1 class="title stages__title">Stages</h1>
+          <div class="stages__wrapper">
+            <div class="stage">
+              <div class="stage__number active">1</div>
+              <div class="stage__line">
+                <div class="stage__fill" style="right: 170px;"></div>
+              </div>
+            </div>
+            <div class="stage">
+              <div class="stage__number">2</div>
+              <div class="stage__line">
+                <div class="stage__fill" style="right: 170px;"></div>
+              </div>
+            </div>
+            <div class="stage">
+              <div class="stage__number">3</div>
+              <div class="stage__line">
+                <div class="stage__fill" style="right: 170px;"></div>
+              </div>
+            </div>
+            <div class="stage">
+              <div class="stage__number">4</div>
+              <div class="stage__line">
+                <div class="stage__fill" style="right: 170px;"></div>
+              </div>
+            </div>
+            <div class="stage">
+              <div class="stage__number">5</div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
-  <script type="text/javascript" src="app.js"></script></body>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="js/pie.js"></script>
+  <script type="text/javascript" src="js/pie-chart.js"></script>
+  <script type="text/javascript" src="js/stages.js"></script>
+  <script type="text/javascript" src="js/fullpage.js"></script>
+  <script type="text/javascript" src="js/fullpage-start.js"></script>
+</body>
 </html>

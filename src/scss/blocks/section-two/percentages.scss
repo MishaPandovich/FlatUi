@@ -1,0 +1,75 @@
+.pie-wrapper {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.pie-wrapper__title {
+  /*общие стили*/
+  margin-top: 8%;
+  margin-bottom: 5%;
+  font-family: 'Lato', sans-serif;
+  font-size: 21px;
+  line-height: 42px;
+  color: #4f4f4f;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pie {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+
+  margin-bottom: 25px;
+}
+
+.pieone, .pietwo, .pieone div, .pietwo div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pie > div > div {
+  width: 120px;
+  height: 120px;
+  border: solid 10px #e75735;
+  border-radius: 50%;
+  clip: rect(0px, 70px, 140px, 0px);
+}
+
+.pieone {
+  clip: rect(0px, 140px, 140px, 70px);
+}
+
+.pietwo {
+  clip: rect(0px, 70px, 140px, 0px);
+}
+
+.pietwo div {
+  display: none;
+}
+
+.pievalue {
+  position: absolute;
+	top: 29%;
+	left: 31%;
+	font-family: Lato,sans-serif;
+	font-weight: 300;
+	font-size: 50px;
+	color: #9d9d9d;
+}
+
+@media (min-width: 1000px) {
+  .pie-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .pie {
+    margin-right: 30px;
+    margin-bottom: 35px;
+  }
+}
