@@ -30,6 +30,18 @@
 		if (parseInt(stages[0].style.right) == -1) { // -1 -не обязательно, это зависит от таймера, а вообще 0
 			animation(stages[1], -1, 50, 2);
 		} 
+
+		if (parseInt(stages[1].style.right) == -1) {
+			animation(stages[2], -1, 50, 3);
+		}
+
+		if (parseInt(stages[2].style.right) == -1) {
+			animation(stages[3], -1, 50, 4);
+		}
+
+		if (parseInt(stages[3].style.right) == -1) {
+			clearInterval(startAnimationStages);
+		}
 	};
 
 	var startAnimationStages = setInterval(function() { animationStages() }, 50);
