@@ -1,0 +1,179 @@
+.group:after { 
+  content: ""; 
+  display: table;
+  clear: both;
+} 
+
+img { 
+  max-width: 100%; 
+  height: auto; 
+  vertical-align: baseline; 
+} 
+
+a { 
+  text-decoration: none; 
+} 
+
+.calendar-wrapper { 
+  width: 360px;  
+  border-radius: 5px; 
+  background: #fff; 
+  margin: auto;
+} 
+
+table { 
+  clear: both; 
+  width: 100%; 
+  border: 1px solid #fff; 
+  border-radius: 3px; 
+  border-collapse: collapse; 
+  color: #444; 
+} 
+
+td { 
+  height: 40px;
+  color: #868686;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  width: 14.28571429%;
+  font-family: 'SourceSansPro-Regular',sans-serif;
+} 
+
+td.not-current { 
+  color: #fff;
+} 
+
+td.today { 
+  color: #fff;
+  font-size: 18px;
+  background: #e75735;
+} 
+
+thead td { 
+  border: none; 
+  color: #28283b; 
+  text-transform: uppercase; 
+  font-size: 1.5em; 
+} 
+
+#btnPrev { 
+  float: left; 
+  margin-bottom: 20px; 
+} 
+
+#btnNext { 
+  float: right;
+  margin-bottom: 20px; 
+}
+
+#btnPrev, 
+#btnNext { 
+  background: transparent; 
+  border: none;
+  outline: none; 
+  font-size: 1em; 
+  color: #c0c0c0; 
+  cursor: pointer; 
+  font-family: "Roboto Condensed", sans-serif; 
+  text-transform: uppercase; 
+  transition: all 0.3s ease; 
+}
+
+#btnPrev:hover,
+#btnNext:hover { 
+  color: #28283b; 
+  font-weight: bold; 
+}
+
+// перепись стилей
+#btnNext,
+#btnPrev {
+  position: relative;
+  bottom: -56px;
+}
+
+thead td {
+  font-size: 28px;
+  font-family: Lato,sans-serif;
+  font-weight: 100;
+  text-transform: none;
+  color: #fff;
+  background: #d54c2c;
+  border: 1px solid #d54c2c;
+  border-top: 1px solid transparent;
+}
+
+.today-date {
+  position: relative;
+  bottom: -41px;
+  padding-bottom: 20px;
+  margin-top: -10px;
+  background: #e75735;
+  font-family: Lato,sans-serif;
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+}
+
+.calendar-wrapper {
+  width: 290px;
+  background: #e75735;
+}
+
+tbody {
+  background: #f2f2f2;
+}
+
+#btnNext img {
+  max-width: 100%;
+  width: 10px;
+  height: 17px;
+  margin-right: 10px;
+}
+
+#btnPrev img {
+   max-width: 100%;
+  width: 10px;
+  height: 17px;
+  margin-left: 10px;
+}
+
+.days td {
+  height: 25px;
+  background: #e75735;
+  border: 1px solid #e75735;
+  color: #fff;
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.calendar {
+  width: 300px;
+}
+
+.calendar-footer {
+  padding: 15px 5px;
+  color: #868686;
+  background: #e5e5e5;
+  text-transform: uppercase;
+  font-family: Lato, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.calendar__title {
+  /*общие стили*/
+  margin-top: 0;
+  margin-bottom: 10%;
+  font-family: 'Lato', sans-serif;
+  font-size: 21px;
+  line-height: 42px;
+  color: #4f4f4f;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}

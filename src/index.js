@@ -5,3 +5,4 @@ import './js/section-three/slider-two.js';
 import './js/section-four/form-feedback.js';
 import './js/section-five/drop-down.js';
 import './js/section-seven/map-pin.js';
+import './js/section-eigth/calendar.js';
